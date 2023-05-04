@@ -47,6 +47,7 @@ while anime_matchmaker:
         answers = input("Do you wish to have all options or randomly pick one? (All or Random) ").lower()
 
         if answers == "all":
+
             print("These shows below match with the genre's you've selected. \n")
 
             # Loop through the results and print the title of each anime
