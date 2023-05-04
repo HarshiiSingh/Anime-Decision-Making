@@ -1,0 +1,94 @@
+STEP 1 (DONE)
+=================
+
+Create a list of anime to be used to make a decision, it randomly pick a show from the list.
+This only utilizes a list with however many shows you decide and the "random.choice" method. Everytime it is ran, it will 
+generate a show.
+
+STEP 2 (DONE)
+=================
+
+Of the list, add things such as genre's or general emotions from the show to allow the user to decide what type of show
+they could be feeling. This can be done with a list in a list for example:
+	[
+		[Tokyo Ghoul, Horror, Psychological, Seinen, Action],
+		[Eighty Six, Action, Mecha, Drama],
+		[Bleach, Action, Shonen]
+	]
+You can now have a input that asks the user what genre they may want. 
+	"What genre do you wish to watch?"
+If there are shows with the same genre use a for loop to add all applicable shows into a list and randomly select from those options.
+
+Doing this allows a more centered direction of what the user could want to watch, instead of a
+randomly selected a show. 
+
+
+STEP 2.5 (DONE)
+=================
+
+Allow the user to choose multiple genre's to lower the selection of shows, if there are no shows then it must be stated so. 
+	"What genre's do you wish to watch? (Use a comma to separate between genres)"
+	Input: Action, Horror
+	Output: The show "Tokyo Ghoul" seems to match your preferences
+
+STEP 2.75 (DONE)
+=================
+
+Instead of randomly selecting a show, ask the user prior to receiving the final output whether they would like to show all options
+or have it pick one.
+	"What genre's do you wish to watch? (Use a comma to separate between genres)"
+	Input: Action
+	"Do you wish to showcase all similar options or randomly pick one? (Yes for first, No for second)"
+		Input: Yes
+		Output: These shows all match the genre you selected
+			Bleach, Action, Shonen
+			Eighty Six, Action, Mecha, Drama
+			Tokyo Ghoul, Horror, Psychological, Seinen, Action
+	or
+		Input: No
+		Output: We have chosen Eighty Six of the shows that matched with the genre's you selected.
+
+===========
+Get to here first, once here, there will need to be many more additions, this above is the base version of the project.
+===========
+
+STEP 3 (Slightly more advanced) (DONE)
+=================
+
+Instead of having a previously set list, utilize the "Jikan" API to access the MAL list of anime that can be watched along
+with the genres and whatnot. This will build upon step 1 and 2, it will still ask the user for the type of emotion or 
+feeling they have to align themselves with specific shows they may want to watch, and choosing randomly from that section.
+
+Now the genre's must match with that of MAL so there must be a check to ensure an applicable genre was chosen.
+
+STEP 3(Warning!!)
+As we know have a larger library of information to use, creating a list for the final showcase will not be manageable at a larger scale,
+utilizing a data frame to more easily access the information will most likely be the better option. 
+
+STEP 3(POSSIBLE ALT SOLUTION)
+If you still wish to showcase the output of several shows, then it may be best to have a set amount, such as asking the user how many
+shows they wish to be reccomended (1-10), and randomly select 1-10 shows based on the users preferences.
+
+STEP 4
+=================
+
+Once the base of step 3 is completed. Allow the user to declare if a show has already been watched by them before, so it may
+not be used within the selection. 
+
+For shows the user has already watched, add towards a file that saves the shows name so if the user reruns the program. The information 
+the user stated prior is saved. 
+
+===========
+Above will be the final version of the project within the console commands, below is implementing a web interface which will incorporate
+much more broader knowledge of things. 
+
+From here you can to go on to other projects, you can decide to either have this project remain in console form until you have
+developed other projects which can also be utilized through a web interface. 
+
+Below is very vague for now as I have not yet thought of a proper way or determined what is needed for the web version yet.
+===========
+
+STEP 5
+=================
+
+Potentially create a website that incorporates this functionality instead of it being done through the console.
